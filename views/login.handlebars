@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App - Login</title>
+	<!-- Include CSS and JS files here -->
+</head>
+<body>
+	{{!-- Navigation bar --}}
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/employer/login">Employer Login</a></li>
+			<li><a href="/jobseeker/login">Job Seeker Login</a></li>
+		</ul>
+	</nav>
+
+	{{!-- Login form --}}
+	<div class="container">
+		<h1>Login</h1>
+		<form action="/login" method="POST">
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username">
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password">
+			<button type="submit">Login</button>
+		</form>
+	</div>
+
+	{{!-- Footer --}}
+	<footer>
+		<p>&copy; My App</p>
+	</footer>
+</body>
+</html>
