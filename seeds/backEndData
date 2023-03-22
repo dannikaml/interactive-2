@@ -1,23 +1,23 @@
 [
   {
-    "title": "Front End - Entry level developer",
-    "description": "Our company is seeking a highly motivated entry-level Front-End Developer to join our growing team. As a Front-End Developer, you will be responsible for developing and maintaining web-based applications and collaborating with cross-functional teams to ensure a seamless user experience. You will work with cutting-edge technologies to build dynamic, interactive, and responsive web pages. ",
+    "title": "Back End - Entry level developer",
+    "description": "Our company is seeking a highly motivated entry-level Back-End Developer to join our growing team. As a Back-End Developer, you will be responsible for developing and maintaining web-based applications and collaborating with cross-functional teams to ensure a seamless user experience. You will work with cutting-edge technologies to build dynamic, interactive, and responsive web pages. ",
     "salary": 80000,
     "requirements": " Strong understanding of HTML, CSS, and JavaScript; Experience with version control systems such as Git;Ability to work in a fast-paced and agile environment" ,
-    "website": 
+    "website": "thisplace.com"
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "salary": 10000,
-    "requirements": " " ,
-    "website":
+    "title": "Back End - Senior developer",
+    "description": "ou'll be involved in the entire product development lifecycle including the design, development, deployment and maintenance of new and existing features. Your work will impact the stability and quality of our web applications. You'll write reusable and maintainable code.",
+    "salary": 100000,
+    "requirements": "5 years of experience with HTML, CSS, and JavaScript, version control systems such as Git, and a strong understanding of industry best practices." ,
+    "website": "thatplace.com"
   },
   {
-    "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "salary": 800,
-    "requirements": " " ,
-    "website":
+    "title": "Back End - Department Manager",
+    "description": "You will be responsible for leading and enabling a team of associates to deliver the best possible customer experience in the company. You will be responsible for the overall performance of the department, including sales, profitability, customer service, and associate development.",
+    "salary": 800000,
+    "requirements": "15 years of experience with industry best practices and supervisory roles." ,
+    "website": "whatpplace.com"
   }
 ]
