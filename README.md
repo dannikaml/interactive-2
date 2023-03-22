@@ -1,4 +1,8 @@
+<<<<<<<<< Temporary merge branch 1
+# interactive-2
 
+hi
+=========
 # Job Board
 
 
@@ -41,4 +45,4 @@ WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 
 ```
-
+>>>>>>>>> Temporary merge branch 2
