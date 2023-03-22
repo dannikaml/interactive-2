@@ -1,23 +1,23 @@
 [
   {
-    "title": "Front End - Entry level developer",
-    "description": "Our company is seeking a highly motivated entry-level Front-End Developer to join our growing team. As a Front-End Developer, you will be responsible for developing and maintaining web-based applications and collaborating with cross-functional teams to ensure a seamless user experience. You will work with cutting-edge technologies to build dynamic, interactive, and responsive web pages. ",
+    "title": "Back End Developer Intern",
+    "description": "Assist in developing and maintaining server-side applications and APIs to support our web and mobile applications. Collaborate with cross-functional teams to deliver high-quality, scalable, and maintainable solutions.",
+    "salary": 20000,
+    "requirements": "Currently pursuing or recently graduated with a degree in Computer Science or a related field. Familiarity with at least one Back End programming language such as Python, Node.js, Ruby on Rails, or Java. Basic understanding of databases such as MySQL, PostgreSQL, or MongoDB.",
+    "website": "builtinchicago.com"
+  },
+  {
+    "title": "Mid-level Back End Developer",
+    "description": "Develop and maintain server-side applications and APIs to support our web and mobile applications. Collaborate with cross-functional teams to deliver high-quality, scalable, and maintainable solutions.",
     "salary": 80000,
-    "requirements": " Strong understanding of HTML, CSS, and JavaScript; Experience with version control systems such as Git;Ability to work in a fast-paced and agile environment" ,
-    "website": 
+    "requirements": "Bachelor's degree in Computer Science or a related field. Proficient in at least one Back End programming language such as Python, Node.js, Ruby on Rails, or Java. Experience with databases such as MySQL, PostgreSQL, or MongoDB",
+    "website": "builtinseattle.com"
   },
   {
-    "title": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "salary": 10000,
-    "requirements": " " ,
-    "website":
-  },
-  {
-    "title": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "salary": 800,
-    "requirements": " " ,
-    "website":
+    "title": "Senior-level Back End Developer",
+    "description": "Lead the development and maintenance of server-side applications and APIs to support our web and mobile applications. Collaborate with cross-functional teams to deliver high-quality, scalable, and maintainable solutions.",
+    "salary": 150000,
+    "requirements": "Bachelor's or Master's degree in Computer Science or a related field. Expert in at least one Back End programming language such as Python, Node.js, Ruby on Rails, or Java. Extensive experience with databases such as MySQL, PostgreSQL, or MongoDB",
+    "website": "builtinaustin.com"
   }
 ]
