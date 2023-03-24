@@ -13,3 +13,5 @@ CREATE DATABASE jobs_db;
 --   salary DECIMAL(10, 2),
 --   PRIMARY KEY (id)
 -- );
+
+-- INSERT INTO jobs (title, description, salary) VALUES 
