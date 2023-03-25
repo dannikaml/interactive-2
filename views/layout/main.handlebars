@@ -1,0 +1,47 @@
+<<<<<<< Updated upstream
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App - Home</title>
+	<!-- Include CSS and JS files here -->
+	 <link rel="stylesheet" type="text/css" href="/css/style.css">
+	 
+	 
+</head>
+<body>
+	{{!-- Navigation bar --}}
+	<nav>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/employer/login">Employer Login</a></li>
+			<li><a href="/jobseeker/login">Job Seeker Login</a></li>
+		</ul>
+	</nav>
+
+	{{!-- Main content --}}
+<div class="container">
+	{{#if isAuthenticated}}
+		<h1>Welcome back, {{user.name}}!</h1>
+		{{#if user.isEmployer}}
+			<p>You are logged in as an employer.</p>
+			<a href="/jobs/create">Create a new job</a>
+		{{else}}
+			<p>You are logged in as a job seeker.</p>
+			<a href="/jobs">View all jobs</a>
+		{{/if}}
+	{{else}}
+		<h1>Welcome to My App!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit nisl vel nisi accumsan consectetur.</p>
+		<a href="/employer/login">Employer Login</a>
+		<a href="/jobseeker/login">Job Seeker Login</a>
+	{{/if}}
+</div>
+
+	{{!-- Footer --}}
+	<footer>
+		<p>&copy; My App</p>
+	</footer>
+</body>
+</html>
+>>>>>>> Stashed changes
