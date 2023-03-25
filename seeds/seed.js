@@ -9,17 +9,18 @@ const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
     await User.bulkCreate(userData, {
-    individualHooks: true,
-    // returning: true,
-});
-const createdUsers = await User.findAll()
+        individualHooks: true,
+        // returning: true,
+    });
+    const createdUsers = await User.findAll()
 
     for (const jobData of jobsData) {
         await Jobs.create({
-        ...jobData,
-      user_id: createdUsers[Math.floor(Math.random() * createdUsers.length)].id,
-    });
-    } 
+            ...jobData,
+            type: jobData.type,
+            user_id: createdUsers[Math.floor(Math.random() * createdUsers.length)].id,
+        });
+    }
 
 };
 
