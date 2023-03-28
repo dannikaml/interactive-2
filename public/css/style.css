@@ -1,0 +1,82 @@
+/* #293B5F
+47597E
+DBE6FD
+B2AB8C */
+/* Global styles */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #293B5F;
+    color: #DBE6FD;
+    padding: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #47597E;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Job board index */
+  .job-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .job-card {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #B2AB8C;
+    padding: 20px;
+  }
+  
+  .job-card:last-child {
+    margin-right: 0;
+  }
+  
+  .job-card h2 {
+    margin-top: 0;
+  }
+  
+  .job-card p {
+    margin: 10px 0;
+  }
+  
+  .job-card .post-button {
+    display: block;
+    margin-top: 10px;
+    background-color: #293B5F;
+    color: #B2AB8C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .job-card .post-button:hover {
+    background-color: #47597E;
+  }
+  
