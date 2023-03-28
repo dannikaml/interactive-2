@@ -15,7 +15,6 @@ router.get('/', async (req, res) => {
 
 
     const jobsDataPlain = jobsData.map((Jobs) => Jobs.get({ plain: true }));
-    res.send(jobsDataPlain)
     res.render('homepage', {
       jobsDataPlain,
       logged_in: req.session.logged_in

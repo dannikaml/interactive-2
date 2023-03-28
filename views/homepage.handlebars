@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My App - Home</title>
-	<!-- Include CSS and JS files here -->
-</head>
-<body>
-	{{!-- Navigation bar --}}
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/employer/login">Employer Login</a></li>
-			<li><a href="/jobseeker/login">Job Seeker Login</a></li>
-		</ul>
-	</nav>
-
-	{{!-- Main content --}}
-	<div class="container">
-		<h1>Welcome to My App!</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit nisl vel nisi accumsan consectetur.</p>
-	</div>
-
-	{{!-- Footer --}}
-	<footer>
-		<p>&copy; My App</p>
-	</footer>
-</body>
-</html>
+  {{#each jobsDataPlain as |job| }}
+    <div>
+      <h1>{{job.title}}</h1>
+      <p>{{job.description}}</p>
+      <h2>Requirements:</h2>
+      <ul>
+        <li>{{job.requirements}}</li>
+      </ul>
+      <h2>Salary: {{job.salary}}</h2>
+      <p>Website: {{job.website}}</p>
+      <p>Created At: {{job.createdAt}}</p>
+    </div>
+	{{/each}}

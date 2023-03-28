@@ -1,0 +1,13 @@
+  {{#each jobsDataPlain as |job| }}
+    <div>
+      <h1>{{job.title}}</h1>
+      <p>{{job.description}}</p>
+      <h2>Requirements:</h2>
+      <ul>
+        <li>{{job.requirements}}</li>
+      </ul>
+      <h2>Salary: {{job.salary}}</h2>
+      <p>Website: {{job.website}}</p>
+      <p>Created At: {{job.createdAt}}</p>
+    </div>
+	{{/each}}
