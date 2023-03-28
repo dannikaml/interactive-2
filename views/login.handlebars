@@ -1,34 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My App - Login</title>
-	<!-- Include CSS and JS files here -->
-</head>
-<body>
-	{{!-- Navigation bar --}}
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/employer/login">Employer Login</a></li>
-			<li><a href="/jobseeker/login">Job Seeker Login</a></li>
-		</ul>
-	</nav>
+<div class="row">
+  <div class="col-md-6">
+    <h2>Login</h2>
 
-	{{!-- Login form --}}
-	<div class="container">
-		<h1>Login</h1>
-		<form action="/login" method="POST">
-			<label for="username">Username:</label>
-			<input type="text" name="username" id="username">
-			<label for="password">Password:</label>
-			<input type="password" name="password" id="password">
-			<button type="submit">Login</button>
-		</form>
-	</div>
+    <form class="form login-form">
+      <div class="form-group">
+        <label for="email-login">email:</label>
+        <input class="form-input" type="text" id="email-login" />
+      </div>
+      <div class="form-group">
+        <label for="password-login">password:</label>
+        <input class="form-input" type="password" id="password-login" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">login</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <h2>Signup</h2>
 
-	{{!-- Footer --}}
-	<footer>
-		<p>&copy; My App</p>
-	</footer>
-</body>
-</html>
+    <form class="form signup-form">
+      <div class="form-group">
+        <label for="name-signup">name:</label>
+        <input class="form-input" type="text" id="name-signup" />
+      </div>
+      <div class="form-group">
+        <label for="email-signup">email:</label>
+        <input class="form-input" type="text" id="email-signup" />
+      </div>
+      <div class="form-group">
+        <label for="password-signup">password:</label>
+        <input class="form-input" type="password" id="password-signup" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">signup</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+{{!-- <script src="./"></script> --}}
