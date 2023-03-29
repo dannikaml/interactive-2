@@ -42,6 +42,6 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening...'));
 });
 
-const colors = require('colors');
 
-console.log('Welcome to the Bored of My Job Board app! Made with love by Dannika, Alex, Eeann, John & Bailey!'.rainbow.underline.bold);
+
+console.log('Welcome to the Bored of My Job Board app! Made with love by Dannika, Alex, Eeann, John & Bailey!');
