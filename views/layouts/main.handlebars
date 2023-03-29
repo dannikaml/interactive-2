@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Board!</title>
-  <link rel="stylesheet" href="/public/css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+
 </head>
 
 <body>
@@ -19,6 +20,7 @@
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <button class="no-button" id="logout">logout</button>
+        <button onclick="window.location.href='/job/new'" class="no-button">Create a new job</button> 
         {{else}}
         <a href="/login">login</a>
         {{/if}}
