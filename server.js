@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars');
 const routes = require('./routes');
 
 // Set up Handlebars.js engine
-const hbs = exphbs.create(); 
+const hbs = exphbs.create();
 
 const sequelize = require('./config/connection');
 
@@ -41,3 +41,7 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening...'));
 });
+
+const colors = require('colors');
+
+console.log('Welcome to the Bored of My Job Board app! Made with love by Dannika, Alex, Eeann, John & Bailey!'.rainbow.underline.bold);
