@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { Jobs } = require('../models');
+const { Jobs, User } = require('../models');
+const { Op } = require('sequelize');
 
 const withAuth = require('../utils/auth');
 
@@ -62,6 +63,49 @@ router.delete('/jobs', withAuth, async (req, res) => {
     }
 
     res.status(200).json(deletedJob);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/job', async (req, res) => {
+  try {
+    const query = req.query.q;
+    let jobData;
+
+    if (query) {
+      jobData = await Jobs.findAll({
+        where: {
+          [Op.or]: [
+            { title: { [Op.like]: `%${query}%` } },
+            { description: { [Op.like]: `%${query}%` } },
+          ],
+        },
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+    } else {
+      jobData = await Jobs.findAll({
+        include: [
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+    }
+
+    const jobs = jobData.map((job) => job.get({ plain: true }));
+
+    res.render('jobs', {
+      jobs,
+      query,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
