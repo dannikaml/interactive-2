@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Job Board!</title>
-  <link rel="stylesheet" type="text/css" src="/public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 </head>
-
 <body>
   <div>
     <header>
@@ -21,18 +18,28 @@
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <button class="no-button" id="logout">logout</button>
-        <button onclick="window.location.href='/job/new'" class="no-button">Create a new job</button> 
+        <button onclick="window.location.href='/job/new'" class="no-button">Create a new job</button>
         {{else}}
         <a href="/login">login</a>
         {{/if}}
       </nav>
+      <p>Current time: <span id="current-time"></span></p>
+      <script>
+        // Initialize Moment.js
+        moment().format();
+
+        // Update the #current-time element with the current time
+        setInterval(function() {
+          var currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+          document.getElementById('current-time').textContent = currentTime;
+        }, 1000);
+      </script>
     </header>
     <main class="container">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>
-      
     </footer>
   </div>
 
@@ -42,7 +49,6 @@
   {{/if}}
 
   <script src="/public/js/login.js"></script>
-
+  <script src="/public/js/moment.js"></script>
 </body>
-
 </html>
