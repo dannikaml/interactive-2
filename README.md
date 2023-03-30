@@ -1,22 +1,23 @@
 # <Bored-of-Your-Job-Board-App>
 
 ## Description
+***
 The Board of your Job Board app is a platform that enables users to view job postings, create new job postings, and manage their job postings. Upon visiting the site, users are presented with the job postings dashboard and a login button. When the user clicks on the login button, they are taken to a login/signup form where they can enter their credentials or sign up to create a new account. Once logged in, users can view job postings or create new ones. Navigation links for the homepage, the dashboard, and the option to log out are available for signed-in users.
 
 The homepage displays existing jobs, including the post title, requirements, salary, and date created. Users can create a new job post by clicking on the "create new post" button, which prompts them to enter both a title and contents for the job. Once the title and contents are saved, the user is taken back to an updated dashboard with their new post. Users can also manage their job postings by accessing the dashboard, which displays any job posts they have already created and allows them to create new ones.
 
 Overall, the Board of your Job Board app provides a simple and easy-to-use interface for users to view and manage job postings, making it a valuable tool for job seekers and employers alike.
-
+***
 ## Challenges we faced include: 
 - Getting the routes to go to the right places
 - Learning how to use handlebars
 - Merge conflicts
-
+***
 ## Successes we are proud of include: 
 - Finally figuring out the routes & models!
 - Collaborating as a team to get everything done from start to finish
 - Working together to debug each others issues
-
+***
 ## Table of Contents
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
@@ -25,7 +26,7 @@ Overall, the Board of your Job Board app provides a simple and easy-to-use inter
 - [Credits](#credits)
 - [License](#license)
 - [Future Development](#future-development)
-
+***
 ## USER STORY
 ```
 AS A recruiter who needs to share available developer jobs,
@@ -57,7 +58,7 @@ THEN the title and contents of my post are saved and I am taken back to an updat
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 ```
-
+***
 ## Installation
 Here are installation instructions for the job board app:
 
@@ -95,7 +96,7 @@ source the database
 ```
 npm start
 ```
-
+***
 ## Usage
 To use the job board app, you must first follow the installation instructions, then once you've done an npm start"
 
@@ -104,7 +105,8 @@ Open a web browser and navigate to http://localhost:3001. You should be presente
 Click on the login button to either login or signup to create an account.
 
 Once you are logged in, you can view job postings or create a new one. You can also logout by clicking on the logout option in the navigation.
-
+***
+## A screenshot of the MVP
 ![screenshot](./assets/Screenshot%202023-03-30%20175045.png)
 
 ## Credits
@@ -115,10 +117,10 @@ Bailey [GitHub](https://github.com/skyeflier)
 Alex [GitHub](https://github.com/alexandramunn)   
 John [GitHub](https://github.com/johnrklink)   
 Eeann [GitHub](https://github.com/Eibon64) 
-
+***
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-
+***
 ## Future Deployment
 For future iterations of this website, we would improve it by adding:
 - Create additional tagging and filtering options to provide a better, more organized user experience
