@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Jobs, User } = require('../models');
-const { Op } = require('sequelize');
+// const { Op } = require('sequelize');
 
 const withAuth = require('../utils/auth');
 
@@ -42,11 +42,14 @@ router.post('/jobs', withAuth, async (req, res) => {
       user_id: req.session.user_id,
     });
 
-    res.status(200).json(newJob);
+    // Redirect to user's job dashboard upon successful submission
+    res.redirect('/dashboard');
+
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
 
 router.delete('/jobs', withAuth, async (req, res) => {
   try {
