@@ -1,7 +1,8 @@
+
 /* #293B5F
 47597E
 DBE6FD
-B2AB8C */
+/* B2AB8C */ 
 
 /* Global styles */
 /* Define font families */
@@ -10,11 +11,11 @@ body {
   }
   
   /* Define layout for form containers */
-  .row {
+ .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
-  }
+  } */
   
   .col-md-6 {
   flex: 0 0 50%;
@@ -23,11 +24,11 @@ body {
   }
   
   /* Define style for form headings */
-  h2 {
+   h2 {
   font-size: 24px;
   font-weight: bold;
   margin-top: 30px;
-  }
+  } 
   
   /* Define layout for form inputs and buttons */
   .form {
@@ -89,3 +90,56 @@ body {
   font-size: 14px;
   }
 
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+  .form {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9; 
+}
+ 
