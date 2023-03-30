@@ -1,3 +1,62 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board!</title>
+<style>
+  /* Style for the job container */
+div {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for the job title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for the job description */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Style for the job requirements section */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for the job requirements list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for the job salary section */
+h2:nth-of-type(2) {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for the job website and created at sections */
+p:nth-of-type(n+4) {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+</style>
   {{#each jobsDataPlain as |job| }}
     <div>
       <h1>{{job.title}}</h1>
