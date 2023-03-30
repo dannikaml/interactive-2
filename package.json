@@ -1,6 +1,9 @@
 {
   "name": "interactive-2",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.x"
+  },
   "description": "Job Board",
   "main": "server.js",
   "scripts": {
