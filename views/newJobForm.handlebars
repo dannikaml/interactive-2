@@ -7,95 +7,94 @@
   <title>Job Board!</title>
   <style>
     /* Set font family and size for the entire form */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
 
-/* Style the job submission form container */
-div {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    /* Style the job submission form container */
+    div {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-/* Style the job submission form header */
-h1 {
-  font-size: 28px;
-  margin-top: 0;
-}
+    /* Style the job submission form header */
+    h1 {
+      font-size: 28px;
+      margin-top: 0;
+    }
 
-/* Style the form labels */
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
+    /* Style the form labels */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-/* Style the form inputs */
-input[type="text"],
-input[type="website"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
+    /* Style the form inputs */
+    input[type="text"],
+    input[type="website"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
 
-/* Style the form button */
-button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
+    /* Style the form button */
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-/* Style the form button on hover */
-button[type="submit"]:hover {
-  background-color: #0069d9;
-}
+    /* Style the form button on hover */
+    button[type="submit"]:hover {
+      background-color: #0069d9;
+    }
   </style>
 </head>
 
 <div>
-    <h1>Job Submission Form</h1>
-<form method="post" action="/submit-job">
-  <div class="job-form">
-    <label for="job-title">Job Title:</label>
-    <input type="text" id="job-title" name="job-title" required>
-  </div>
-  <div class="job-form">
-    <label for="job-description">Job Description:</label>
-    <textarea id="job-description" name="job-description" required></textarea>
-  </div>
-  <div class="job-form">
-    <label for="job-requirements">Job Requirements:</label>
-    <textarea id="job-requirements" name="job-requirements" required></textarea>
-  </div>
-  <div class="job-form">
-    <label for="job-salary">Job Salary:</label>
-    <input id="job-salary" name="job-salary" required></textarea>
-  </div>
-  <div class="job-form">
-    <label for="job-website">Website:</label>
-    <input type="website" id="job-website" name="job-website" required>
-  </div>
-  <div class="job-form">
-    <label for="job-created">Created At:</label>
-    <input id="job-created" name="job-created" required></input>
-  </div>
-  <div class="job-form">
-        <button class="btn btn-primary" type="submit">Submit Job Post</button>
-      </div>
-</form>
+  <h1>Job Submission Form</h1>
+  <form method="post" action="/jobs">
+    <div class="job-form">
+      <label for="job-title">Job Title:</label>
+      <input type="text" id="job-title" name="title" required>
+    </div>
+    <div class="job-form">
+      <label for="job-description">Job Description:</label>
+      <textarea id="job-description" name="description" required></textarea>
+    </div>
+    <div class="job-form">
+      <label for="job-requirements">Job Requirements:</label>
+      <textarea id="job-requirements" name="requirements" required></textarea>
+    </div>
+    <div class="job-form">
+      <label for="job-salary">Job Salary:</label>
+      <input id="job-salary" name="salary" required></textarea>
+    </div>
+    <div class="job-form">
+      <label for="job-website">Website:</label>
+      <input type="website" id="job-website" name="website" required>
+    </div>
+    <div class="job-form">
+      <label for="job-created">Created At:</label>
+      <input id="job-created" name="createdAt" required></input>
+    </div>
+    <div class="job-form">
+      <button class="btn btn-primary" type="submit">Submit Job Post</button>
+    </div>
+  </form>
 </div>
-
