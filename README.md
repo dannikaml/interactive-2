@@ -11,31 +11,25 @@ SO THAT I can find recruitment's to fill open roles
 ```
 GIVEN an interactive job board site
 WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes logins for Employers; navigation links to view jobs by developer "??????????"
-WHEN I click on the Employer login 
-THEN I am taken to the homepage login
-WHEN I click on any other links in the navigation
-THEN I am prompted to create a username and password
-WHEN I click on the sign-up button
+THEN I am presented with the job postings dashboard and a login button
+WHEN I click on the login button 
+THEN I am taken to a form to either login or signup to create an account
+WHEN I put my credentials into the login form 
+THEN I am taken to the dashboard where I can view job postings or create a new one
 
+WHEN I put my information into the signup form and create an account
 THEN my user credentials are saved and I am logged into the site
-WHEN I revisit the site at a later time and choose to sign in
 THEN I am prompted to enter my username and password
 WHEN I am signed in to the site
 THEN I see navigation links for the homepage, the dashboard, and the option to log out
 WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing jobs that include the post title and the date created
-WHEN I click on an existing job
-THEN I am presented with the post title, and job contents
-WHEN I click on the dashboard option in the navigation
+THEN I am taken to the homepage and presented with existing jobs that include the post title, requirements, salary and the date created
 
-THEN I am taken to the dashboard and presented with any job posts I have already created and the option to add a new job post
+THEN I am taken to the dashboard and presented with any job posts I have already created and the option to create a new post
 WHEN I click on the button to add a new job post
-THEN I am prompted to enter both a title and contents for my job post
+THEN I am prompted to enter both a title and contents for the job
 WHEN I click on the button to create a new job post
-THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new job post
-WHEN I click on one of my existing posts in the dashboard
-THEN I am able to delete or update my post and taken back to an updated dashboard
+THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new  post
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
 
