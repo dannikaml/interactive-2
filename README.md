@@ -35,10 +35,6 @@ SO THAT I can find candidates to fill open roles.
 GIVEN an interactive job board site
 WHEN I visit the site for the first time
 THEN I am presented with the job postings dashboard and a login button
-WHEN I click on the login button
-THEN I am taken to a form to either login or signup to create an account
-WHEN I put my credentials into the login form
-THEN I am taken to the dashboard where I can view job postings or create a new one
 WHEN I put my information into the signup form and create an account
 THEN my user credentials are saved and I am logged into the site
 THEN I am prompted to enter my username and password
