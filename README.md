@@ -27,11 +27,14 @@ Overall, the Board of your Job Board app provides a simple and easy-to-use inter
 - [Future Development](#future-development)
 
 ## USER STORY
+```
 AS A recruiter who needs to share available developer jobs,
 I WANT a site where I can post about job opportunities,
 SO THAT I can find candidates to fill open roles. 
+```
 
 ## ACCEPTANCE CRITERIA
+```
 GIVEN an interactive job board site
 WHEN I visit the site for the first time
 THEN I am presented with the job postings dashboard and a login button
@@ -53,6 +56,7 @@ WHEN I click on the button to create a new job post
 THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new  post
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
+```
 
 ## Installation
 Here are installation instructions for the job board app:
@@ -66,7 +70,9 @@ Open a terminal or command prompt and navigate to the project directory.
 Run the following command to install the app's dependencies:
 
 Copy code
+```
 npm install
+```
 Create a .env file in the project root directory and add the following environment variables:
 
 makefile
@@ -82,10 +88,13 @@ arduino
 Copy code
 npm run db:create
 Run the following command to start the server:
-
-sql
-Copy code
+```
+mysql -u root -p
+```
+source the database
+```
 npm start
+```
 
 ## Usage
 To use the job board app, you must first follow the installation instructions, then once you've done an npm start"
@@ -95,6 +104,8 @@ Open a web browser and navigate to http://localhost:3001. You should be presente
 Click on the login button to either login or signup to create an account.
 
 Once you are logged in, you can view job postings or create a new one. You can also logout by clicking on the logout option in the navigation.
+
+![screenshot](./assets/Screenshot%202023-03-30%20175045.png)
 
 ## Credits
 Contributors to this project are:
